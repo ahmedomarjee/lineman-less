@@ -1,8 +1,8 @@
 {
   "name": "lineman-less",
   "description": "A Less plugin for Lineman, using grunt-contrib-less",
-  "version": "0.1.0",
-  "homepage": "https://github.com/linemanjs/lineman-less",
+  "version": "0.1.1",
+  "homepage": "https://github.com/ahmedomarjee/lineman-less",
   "author": {
     "name": "Justin Searls",
     "email": "justin@testdouble.com"
@@ -11,14 +11,18 @@
     {
       "name": "Jay Harris",
       "email": "jay@aranasoft.com"
+    },
+    {
+      "name": "Ahmed Omarjee",
+      "email": "aomarjee@gmail.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/linemanjs/lineman-less.git"
+    "url": "https://github.com/ahmedomarjee/lineman-less.git"
   },
   "bugs": {
-    "url": "https://github.com/linemanjs/lineman-less/issues"
+    "url": "https://github.com/ahmedomarjee/lineman-less/issues"
   },
   "scripts": {
     "postinstall": "node script/postinstall.js"
