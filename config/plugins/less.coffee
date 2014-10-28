@@ -20,7 +20,7 @@ module.exports = (lineman) ->
         paths: ["src/css", "vendor/css"]
       compile:
         files:
-          "<%= files.less.generatedApp %>": ["<%= files.less.main %>", "<%= files.less.app %>"]
+          "<%= files.less.generatedApp %>": ["<%= files.less.main %>"]
           "<%= files.less.generatedVendor %>": ["<%= files.less.vendor %>"]
 
     concat_sourcemap:
