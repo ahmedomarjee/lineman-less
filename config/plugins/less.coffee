@@ -5,6 +5,7 @@ module.exports = (lineman) ->
     less:
       main: "src/css/main.less"
       app: "src/css/**/*.less"
+      vendorMain: "vendor/css/main.less"
       vendor: "vendor/css/**/*.less"
       generatedApp: "generated/css/app.less.css"
       generatedVendor: "generated/css/vendor.less.css"
@@ -17,11 +18,12 @@ module.exports = (lineman) ->
 
     less:
       options:
+        sourceMapAsFile: true
         paths: ["src/css", "vendor/css"]
       compile:
         files:
           "<%= files.less.generatedApp %>": ["<%= files.less.main %>"]
-          "<%= files.less.generatedVendor %>": ["<%= files.less.vendor %>"]
+          "<%= files.less.generatedVendor %>": ["<%= files.less.vendorMain %>"]
 
     concat_sourcemap:
       css:
@@ -29,5 +31,5 @@ module.exports = (lineman) ->
 
     watch:
       less:
-        files: ["<%= files.less.main %>", "<%= files.less.app %>", "<%= files.less.vendor %>"]
+        files: ["<%= files.less.app %>", "<%= files.less.vendor %>"]
         tasks: ["less", "concat_sourcemap:css"]
